@@ -1,15 +1,45 @@
 {
-  
-  "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
+
+  "pages": [
+    "pages/store/index",
+    "pages/activity/index",
+    "pages/world/index",
+    "pages/my/index",
+    "pages/store/tabs/index"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
+  "tabBar": {
+    "color": "red",
+    "list": [
+      {
+        "pagePath": "pages/store/index",
+        "text": "商城",
+        "iconPath": "/assets/image/header.png",
+        "selectedIconPath": "/assets/image/header.png"
+      },{
+        "pagePath": "pages/world/index",
+        "text": "世界",
+        "iconPath": "/assets/image/header.png",
+        "selectedIconPath": "/assets/image/header.png"
+      }, {
+        "pagePath": "pages/activity/index",
+        "text": "活动",
+        "iconPath": "/assets/image/header.png",
+        "selectedIconPath": "/assets/image/header.png"
+      }, {
+        "pagePath": "pages/my/index",
+        "text": "我的",
+        "iconPath": "/assets/image/header.png",
+        "selectedIconPath": "/assets/image/header.png"
+      }
+    ]
   },
-  "style": "v2",
+
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "多鱼",
+    "navigationBarTextStyle": "black"
+  },
   "sitemapLocation": "sitemap.json"
+
 }

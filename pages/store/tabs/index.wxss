@@ -1,0 +1,30 @@
+/* pages/store/tabs/index.wxss */
+.over_scr{
+  height: 72vh;
+  overflow-y: scroll;
+} 
+.list_box{
+  width: 100%;
+  border-top: 1px solid rgb(223, 223, 223);
+  padding: 30rpx;
+  box-sizing: border-box;
+  
+}
+
+.imgBox{
+  height: 260rpx;
+  position: relative;
+}
+.imgBox>.image{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+} 
+.loding{
+  display: flex;
+  justify-content: center;
+  padding: 40rpx 0;
+}

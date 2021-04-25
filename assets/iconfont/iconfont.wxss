@@ -1,0 +1,38 @@
+@font-face {font-family: "iconfont";
+  src: url('//at.alicdn.com/t/font_2506517_y38ns0974v.eot?t=1619341445104'); /* IE9 */
+  src: url('//at.alicdn.com/t/font_2506517_y38ns0974v.eot?t=1619341445104#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAOkAAsAAAAAB6gAAANXAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqDDIJMATYCJAMMCwgABCAFhG0HOhuWBsguIScbXkRAGtE2Mutk6K3v3nL/P8dD3YB4+Nrv9dzdfRBGBagy8awzUVRk4fBVAqk6W2Wq2Yj/59rbKxCniKpTRagQFrL7OX/yU1TE7NkB6TvhTnXO0cA5t342WBXeovCgb22NDjpQFZ8G+PaAi7HqnX1zRD2dXODVvyQLOPA8g4Trnig+UGm4I+zzXI5vJD5/23Iaa/jcfnQvwDigQMecZAWSoDeMXXkRmwn0WxbD6MRaWAKWCqNXIF4EZQ4sUx6lpjq0Ql0ysYhvUGnTe+NnfPW/H//thiVJlRlbnT3KEiH1V3+KSfe/cyMnoBsvBDaNjB2gELdKI5dMwtQOE/2KxbS+uFaENFb0fw9fo5pq8w+PJIiaUTkINpArOSmtrSDx21p31ttkUKPBS+AT4kweGOpZNw7DdnC6Gc+UjzrcpdmSqzidOBjykE277tFHRq2MzWfia19Nv4nkZqZQuuX967bSGuruwMahck2zd+78LKWC0lvsWPKwmdtZaJ/fLqWlXHYzhF1CRlXTSodGJt+X9oZ2FlzBruGA6W1326dJ3iCCJMVxehLz6xqQBD0tfT80Jx82Hfa6ayRkksJSTiQS9vT77yne+0iU6ZQeZBdjE+OPTLY/cPqeAxOu/y1vrTfDzv2i3i+tCBLLlk8+KQ+vdse9lVW5T3nE9kF2fpFuG76NIP3jX6zbGSfkDkDvXAkb/Ix8bNL+e37j9F5xTL2D8bcltYCfR2bhhJ4CuQNaidban6FtySqq3vDmImtsjZ7N7jO/Vbd+1eoX1MK4n/0dUzecCa2pGEljCVlrhSicHVQG7KHW2ke/bTnTB0ygTETpw5YegDDqDMmwH8hGvRCF8wOVab9QGw0T9DsP7oID1kJJMYUwx7CI+FakFIhOsvzMOqguwnKjhqNJvc8tw9SgjKJElSabzcE6TMcYYmiSkxiTkESJFmWD7bBGQ5CeEhUWWJyCMX1KvNpX9qY4gWjB2jEK4zCYCOG1QpQEhI7kNmasc58vgskaaXBoDaOiXAajDJStI4niJLQgciy6VoxrucagiSwJw0gQCUVoIdkghGnMFIHoy9upYAImjqJHQi9FPKontbXEzW/TPt8m6GcsliNFjqJ5FuR0jDSax7063nIDAAA=') format('woff2'),
+  url('//at.alicdn.com/t/font_2506517_y38ns0974v.woff?t=1619341445104') format('woff'),
+  url('//at.alicdn.com/t/font_2506517_y38ns0974v.ttf?t=1619341445104') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('//at.alicdn.com/t/font_2506517_y38ns0974v.svg?t=1619341445104#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iconjiantou:before {
+  content: "\e70a";
+}
+
+.iconwenben:before {
+  content: "\e63b";
+}
+
+
+.flexCenter{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.van-notice-bar{
+  border-radius: 12rpx;
+  margin: 26rpx 0 16rpx;
+  height: auto;
+}
+

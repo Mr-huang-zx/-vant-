@@ -1,0 +1,28 @@
+/* pages/store/index.wxss */
+page{
+  background-color: rgb(247, 247, 247);
+}
+.flexCenter{
+  margin: 20rpx 0;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+.flexCenter>image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.iptBox{
+  width: 80%;
+  height: 60rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #999;
+  border-radius: 10rpx;
+  padding: 0 20rpx;
+  background-color: white;
+}
+.iptBox>view{
+  width:90%;
+  color: #999;
+}
