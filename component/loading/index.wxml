@@ -1,0 +1,50 @@
+
+  <view
+    style="position:relative;top:{{topPo>65?65+'px':topPo+'px'}};height:100%;"
+    bindtouchstart="bindStart" 
+    bindtouchmove="bindMove"
+    bindtouchend="bingEnd" >
+    <view class="loding">
+      <view class="loadingStatus" wx:if="{{showType==1}}">
+        <van-icon name="down" />
+        <text style="margin-left:20rpx;" class="iconfont iconjiantou">下拉刷新</text>
+      </view>
+      <view class="loadingI"  wx:if="{{showType==2}}">
+        <van-loading type="spinner" size="40rpx;"/>
+        <text style="margin-left:20rpx;" class="iconfont iconjiantou">刷新中...</text>
+      </view>
+      <view class="moveOut" wx:if="{{showType==3}}">
+        <view style="margin-left:20rpx;" class="iconfont iconjiantou" style="transform:rotate(180deg);">松开刷新</view>
+        <van-icon name="down"/>
+        
+      </view>
+    </view>
+    <view class="list_box">
+      <view class="imgBox">
+        <!-- 金币 -->
+        <view class="views golds">
+          <image class="glodIcon" src="/assets/image/glod_icon.png"></image>
+          <text>1200金币</text>
+        </view>
+        <!-- 图 -->
+        <image class="image" src="/assets/image/wangzhe.jpg"></image>
+        <!-- 兑换件数 -->
+        <text class="haveChange">已兑12055件</text>
+        <!-- 点击获取金币 -->
+        <view class="views btnChnge" catchtap="getGold">
+          获取金币
+        </view>
+        <!-- 名称 -->
+        <view class="views introName">
+          雅典娜-神奇女侠
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="boxLoaing">
+    <view class="boxVie">
+      <van-loading type="spinner" size="40rpx;"/>
+      <text style="margin-left:20rpx;" class="iconfont iconjiantou">刷新中...</text>
+    </view>
+  </view>
+

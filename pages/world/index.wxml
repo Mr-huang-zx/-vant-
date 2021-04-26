@@ -1,2 +1,150 @@
-<!--pages/world/index.wxml-->
-<text>pages/world/index.wxml</text>
+<view>
+  <!-- 头部 -->
+  <view class="topBox">
+    <!-- 通知栏 -->
+    <view class="topLine">
+      <view class="noticeBox">
+        <van-notice-bar 
+          scrollable 
+          color="white"
+          background-color="#658aee"
+          text="技术是开发它的人的共同灵魂。技术是开发它的人的共同灵魂。技术是开发它的人的共同灵魂。" 
+        />
+      </view>
+      <view class="guizBtn">规则</view>
+    </view>
+    <!-- 星星容器 -->
+    <view class="putStarBox">
+      <!-- 单个星星容器 -->
+      <view class="star_1">
+        <view>
+          <image src="/assets/image/dark_star_icon.png"></image>
+          <text>+1</text>
+        </view>
+        看视频
+      </view>
+      <view class="star_2">
+        <view>
+          <image src="/assets/image/light_star_icon.png"></image>
+          <text style="color:red;">+1</text>
+        </view>
+        签到
+      </view>
+      <view class="star_3">
+        <view>
+          <image src="/assets/image/dark_star_icon.png"></image>
+          <text>+1</text>
+        </view>
+        看视频
+      </view>
+      <view class="star_4">
+        <view>
+          <image src="/assets/image/dark_star_icon.png"></image>
+          <text>+1</text>
+        </view>
+        分享
+      </view>
+      <view class="star_5">
+        <view>
+          <image src="/assets/image/dark_star_icon.png"></image>
+          <text>+1</text>
+        </view>
+        看视频
+      </view>
+      <view class="star_6">
+        <view>
+          <image src="/assets/image/dark_star_icon.png"></image>
+          <text>+1</text>
+        </view>
+        集卡
+      </view>
+      <view class="star_7">
+        <view>
+          <image src="/assets/image/dark_star_icon.png"></image>
+          <text>+1</text>
+        </view>
+        集卡
+      </view>
+
+
+
+
+
+
+
+
+
+    </view>
+    <!-- 幸运瓶 -->
+    <view class="luckyBox">
+      <image src="/assets/image/lucky_bottle.png"></image>
+      <view>
+        <view style="font-size:42rpx;font-weight:bold;">14</view>
+        <view style="font-size:26rpx;">活跃度</view>
+      </view>
+    </view>
+    <!-- 宝箱 -->
+    <view class="transureBox">
+      <image style="width:100%;height:46rpx;" src=""></image>
+      <view class="transureImg">
+        <image  src="/assets/image/transure_box.png"></image>
+      </view>
+    </view>
+    <!-- 背景图 -->
+    <image class="bgSand" src="../../assets/image/sand.png"></image>
+  </view>
+  <view class="actionBox">
+    <!-- 三个信息显示 -->
+    <view class="topBoxs">
+      <!-- 金币 -->
+      <view>
+        <view>
+          <image src="/assets/image/glod_icon.png"></image>
+          4184
+        </view>
+        <text>金 币</text>
+      </view>
+      <!-- 活跃度 -->
+      <view>
+        <view>
+          <image src="/assets/image/glod_icon.png"></image>
+          4184
+        </view>
+        <text>活跃度</text>
+      </view>
+      <!-- 兑换 -->
+      <view>
+        <view>
+          <image src="/assets/image/glod_icon.png"></image>
+          4184
+        </view>
+        <text>立即兑换</text>
+      </view>
+    </view>
+    <!-- 邀请码 -->
+    <view class="inviteBox">
+      <!-- 标题 -->
+      <view class="topToast">
+        <text>我的好友+收益 ></text>
+        <image src="/assets/image/glod_icon.png"></image>
+      </view>
+      <!-- 邀请码 -->
+      <view class="inviteNum">
+        <view>
+          <image src="/assets/image/glod_icon.png"></image>
+          <text>我的邀请码:NC1000001</text>
+        </view>
+        <view class="rightBtn">复制</view>
+      </view>
+      <!-- 确定 -->
+      <view class="inviteNum">
+        <view>
+          <image src="/assets/image/glod_icon.png"></image>
+          <input type="text" />
+        </view>
+        <view class="rightBtn">确定</view>
+      </view>
+      <view class="inviteBtn">邀请好友</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,85 @@
+/* pages/store/tabs/index.wxss */
+
+.list_box{
+  width: 100%;
+  border-top: 1px solid rgb(223, 223, 223);
+  padding: 30rpx;
+  box-sizing: border-box;
+  
+}
+
+.imgBox{
+  height: 300rpx;
+  position: relative;
+}
+.imgBox>.views,
+.imgBox>.haveChange{
+  position: absolute;
+  z-index: 5;
+  color: white;
+}
+.imgBox>.image{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+} 
+.golds{
+  position: absolute;
+  bottom: 20rpx;
+  left: 20rpx;
+  z-index: 5;
+  
+  font-weight: 600;
+  font-size: 27rpx;
+}
+.glodIcon{
+  width: 30rpx;
+  height: 30rpx;
+  position: relative;
+  top: 6rpx;
+  margin-right: 6rpx;
+}
+.haveChange{
+  top: 20rpx;
+  right: 20rpx;
+  font-size: 28rpx;
+}
+.btnChnge{
+  right: 20rpx;
+  bottom: 20rpx;
+  font-size: 32rpx;
+  background-color: purple;
+  padding: 4rpx 20rpx;
+  border-radius: 30rpx;
+}
+.introName{
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 40rpx;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 6rpx 30rpx;
+}
+.loding{
+  display: flex;
+  justify-content: center;
+  padding: 40rpx 0;
+}
+.loadingStatus{
+  display:inline-block;color:#c8c9cc;font-size:30rpx;
+}
+.loadingI{
+  display:inline-block;color:#c8c9cc;font-size:30rpx;
+}
+.moveOut{
+  display:flex;color:#c8c9cc;font-size:30rpx;transform:rotate(180deg) !important;
+}
+.boxLoaing{
+  display:flex;justify-content:center;margin:10rpx 0;
+}
+.boxVie{
+  display:inline-block;color:#c8c9cc;font-size:30rpx;
+}

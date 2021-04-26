@@ -1,1 +1,63 @@
-/* pages/activity/index.wxss */
+.topBox{
+  width: 100%;
+  height: 300rpx;
+  background-color: violet;
+}
+.topLine{
+  width: 92%;
+  margin-left: 4%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 20rpx;
+}
+.noticeBox{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 10rpx 4rpx;
+  border-radius: 10rpx;
+  font-size: 32rpx;
+}
+.guizBtn{
+  background-color:#658aee;
+  color:white;
+  height:50rpx;
+  padding: 6rpx 20rpx;
+  border-radius: 10rpx;
+  margin-top: 2rpx;
+}
+
+
+/* 文字爬楼 */
+.scroll-box {
+  overflow: hidden;
+  width: 92%;
+}
+
+.item-box {
+  overflow: hidden;
+  position: relative;
+  height: 40rpx;
+  /*根据需要设置合适的边距，左边距88rpx是因为左侧有个小图标*/
+  /* margin: 26rpx 28rpx 0 88rpx; */
+}
+.scroll {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+.item {
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 24rpx;
+}
+.scroll.trans {
+  transition: all 0.24s;
+}

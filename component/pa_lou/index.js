@@ -1,5 +1,5 @@
-// pages/activity/index.js
-Page({
+// component/pa_lou/index.js
+Component({
 
   /**
    * 页面的初始数据
@@ -20,7 +20,8 @@ Page({
     // 计时器的等待时间
     duration: 4000
   },
-  // 无缝滚动，要复制列表最后一项，追加为列表第一项，使第一项和最后一项相同
+  methods:{
+    // 无缝滚动，要复制列表最后一项，追加为列表第一项，使第一项和最后一项相同
     // 当滚动到最后一项时，去掉css3动画，定位到第一项，设置计时器的等待时间为0
     _scroll() {
       let _this = this; // 本网站箭头函数的语法高亮有问题...
@@ -46,67 +47,15 @@ Page({
           });
         }
       }, _this.data.duration);
-    },
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
+    }
+  },
+  ready(){
     let _this = this;
     // 获取高度，用法请查询文档
     this.createSelectorQuery().select('.scroll .item').boundingClientRect(function(r) {
-      console.log(r)
       _this.data.scrollBoxItemHeight = r.height;
       _this.data.scrollBoxHeight = (_this.data.itemCount - 1) * r.height;
       _this._scroll();
     }).exec();
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
   }
 })

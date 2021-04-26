@@ -1,11 +1,20 @@
 {
 
   "pages": [
-    "pages/store/index",
+    "component/pa_lou/index",
+
     "pages/activity/index",
+
     "pages/world/index",
+    "pages/store/index",
+    
     "pages/my/index",
-    "pages/store/tabs/index"
+    "pages/store/tabs/index",
+
+
+
+    "component/loading/index"
+
   ],
   "tabBar": {
     "color": "red",

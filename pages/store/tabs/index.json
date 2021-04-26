@@ -1,7 +1,5 @@
 {
   "usingComponents": {
-    "van-icon": "/miniprogram_npm/vant-weapp/icon/index",
-    "van-loading": "/miniprogram_npm/vant-weapp/loading/index"
-  },
-  "enablePullDownRefresh": true
+    "my-loading":"/component/loading/index"
+  }
 }
