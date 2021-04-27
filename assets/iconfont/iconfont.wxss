@@ -36,7 +36,28 @@
 }
 .van-notice-bar{
   border-radius: 12rpx;
-  margin: 26rpx 0 16rpx;
-  height: auto;
+  margin-bottom: 16rpx;
+  height: 60rpx !important;
 }
+.van-ellipsis{
+  font-weight: 600 !important;
+  color: #333;
+}
+.van-notice-bar__wrap{
+  font-size: 28rpx !important;
+}
+ .van-tab--active,
+ .van-tab--active>.van-ellipsis{
+  color: #7715c1 !important;
+}
+.van-tabs__wra,
+.van-tabs__nav,
+.van-tabs__scroll--line,
+.van-tabs__wrap,
+.van-tab{
+  height: 80rpx !important;
+  line-height: 80rpx !important;
+}
+
+
 

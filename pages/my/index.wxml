@@ -1,2 +1,85 @@
-<!--pages/my/index.wxml-->
-<text>pages/my/index.wxml</text>
+<view>
+  <!-- 1 -->
+  <view class="topBox">
+    <!-- 头部 -->
+    <!-- <image src="/assets/image/"></image> -->
+    <view class="topLan">
+      <image src="/assets/image/glod_icon.png"></image>
+      <view>
+        <image src="/assets/image/glod_icon.png" style="margin-right:30rpx;"></image>
+        <image src="/assets/image/glod_icon.png"></image>
+      </view>
+    </view>
+    <!-- 头像部分 -->
+    <view class="headerBox">
+      <view class="headerImg">
+        <image src="/assets/image/header.png"></image>
+      </view>
+      <text>djhaoidjodj</text>
+      <view class="inforBox">
+        <view>活跃度：14</view>
+        <view>金币：4286</view>
+      </view>
+    </view>
+  </view>
+  <!-- 动作 -->
+  <view class="btnAct">
+    <!-- 1 -->
+    <view class="actionBtn">
+      <view>
+        <image src="/assets/image/header.png"></image>
+        <text>邀请好友</text>
+      </view>
+      <view>
+        <image src="/assets/image/header.png"></image>
+        <text>邀请好友</text>
+      </view>
+      <view>
+        <image src="/assets/image/header.png"></image>
+        <text>邀请好友</text>
+      </view>
+      <view>
+        <image src="/assets/image/header.png"></image>
+        <text>邀请好友</text>
+      </view>
+    </view>
+    <!-- 2 -->
+    <view class="swiperBox">
+      <swiper indicator-dots indicator-color="#999" indicator-active-color="brown" style="height:100%;"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <swiper-item>
+          <image src="/assets/image/header.png"></image>
+        </swiper-item>
+        <swiper-item>
+          <image src="/assets/image/wangzhe.jpg"></image>
+        </swiper-item>
+      </swiper>
+    </view>
+  </view>
+  <view class="lineBox"></view>
+  <view class="listBox">
+    <view class="listHeader">
+      <view></view>
+      日常任务
+    </view>
+
+    <view class="listL">
+      <!-- 左 -->
+      <view class="listLeft">
+        <view>
+          <image src="/assets/image/wangzhe.jpg"></image>
+        </view>
+        <view>
+          <view class="introWord">
+            闯关答题
+            <text> +2000 </text>
+            <image src="/assets/image/glod_icon.png"></image>
+          </view>
+          <text style="font-size:26rpx;color:#999;">最高奖励666金币</text>
+        </view>
+      </view>
+      <!-- 去完成 -->
+      <view class="toFinish">去完成</view>
+    </view>
+  </view>
+</view>

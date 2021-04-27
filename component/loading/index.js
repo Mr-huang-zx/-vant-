@@ -6,7 +6,7 @@ Component({
    */
   data: {
     hei:0,//手指按下的高度
-    topPo:-65,
+    topPo:-45,
     showType:1,
   },
   methods:{
@@ -40,16 +40,16 @@ Component({
     bingEnd(e){
       // 上拉加载更多
      
-      if(this.data.topPo ==-65){return}
-      if(this.data.topPo<-55){
+      if(this.data.topPo ==-45){return}
+      if(this.data.topPo<-45){
         this.setData({
           topPo:-120,
         })
       }
       
-      if(this.data.topPo>-65 && this.data.topPo<=-12){
+      if(this.data.topPo>-45 && this.data.topPo<=-12){
         this.setData({
-          topPo:-65,
+          topPo:-45,
         })
       }
       // 下拉刷新
@@ -61,7 +61,7 @@ Component({
         })
         setTimeout(()=>{
           this.setData({
-            topPo:-65
+            topPo:-45
           })
           wx.showToast({
             title: '刷新成功',

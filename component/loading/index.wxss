@@ -3,9 +3,9 @@
 .list_box{
   width: 100%;
   border-top: 1px solid rgb(223, 223, 223);
-  padding: 30rpx;
   box-sizing: border-box;
-  
+  padding-top: 20rpx;
+  margin-top: 10rpx;
 }
 
 .imgBox{
@@ -51,7 +51,7 @@
   right: 20rpx;
   bottom: 20rpx;
   font-size: 32rpx;
-  background-color: purple;
+  background-color: #7715c1;
   padding: 4rpx 20rpx;
   border-radius: 30rpx;
 }
@@ -62,11 +62,12 @@
   border-radius: 40rpx;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 6rpx 30rpx;
+  font-size: 34rpx;
 }
 .loding{
   display: flex;
   justify-content: center;
-  padding: 40rpx 0;
+  padding: 32rpx 0;
 }
 .loadingStatus{
   display:inline-block;color:#c8c9cc;font-size:30rpx;

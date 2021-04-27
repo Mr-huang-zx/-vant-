@@ -4,12 +4,24 @@ page{
 }
 .flexCenter{
   margin: 20rpx 0;
-  padding: 0 30rpx;
+  padding: 0 30rpx 0 40rpx;
   box-sizing: border-box;
 }
 .flexCenter>image{
-  width: 40rpx;
-  height: 40rpx;
+  width: 70rpx;
+  height: 56rpx;
+  animation: sacN infinite 1s;
+}
+@keyframes sacN{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.2);
+  }
+  100%{
+    transform: scale(1);
+  }
 }
 .iptBox{
   width: 80%;
@@ -25,4 +37,7 @@ page{
 .iptBox>view{
   width:90%;
   color: #999;
+}
+.van-tab__pane--active{
+  width: 92% !important;margin-left: 4% !important;
 }

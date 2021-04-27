@@ -54,10 +54,163 @@
 }
 
 .item {
-  height: 40rpx;
+  height: 20px;
   line-height: 40rpx;
   font-size: 24rpx;
 }
 .scroll.trans {
   transition: all 0.24s;
+}
+/* end */
+
+.topTitle{
+  text-align: center;
+  margin-top: 40rpx;
+  font-weight: bold;
+  color: white;
+  font-size: 40rpx;
+}
+.selectType{
+  width: 92%;
+  margin-left: 4%;
+  position: relative;
+  top: -130rpx;
+  
+}
+.selectType>view:nth-of-type(1){
+  background-color: white;
+  border-radius: 20rpx;
+  padding:0 20rpx;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 8px 1px #d2d2d2;
+}
+.selectType>view>view{
+  padding: 20rpx 16rpx;
+}
+.toastWord{
+  font-size: 26rpx;
+  display: inline-block;
+  
+  border-bottom: 1px solid #efefef;
+  /* display: flex;
+  align-items: center; */
+  /* line-height: 26rpx; */
+}
+.toastWord>image{
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+  margin-right: 10rpx;
+}
+.selectType .selectBox{
+  display: flex;
+  justify-content: space-between;
+  padding: 26rpx 30rpx;
+}
+.selectBox>view{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  font-size: 30rpx;
+  font-weight: 600;
+  align-items: center;
+}
+.selectBox>view>view{
+  position: relative;
+  width: 120rpx;
+  height: 90rpx;
+  margin-bottom: 10rpx;
+}
+.gifts {
+  width: 80%;
+  height: 80rpx;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  left: 20rpx;
+}
+.circleS{
+  width: 100%;
+  height: 26rpx;
+  border-radius: 50%;
+  background-color: #D3D3D3;
+
+  position: absolute;
+  bottom: 0;
+}
+.selectType .toastWs{
+  text-align: center;
+  color: #999;
+  font-size: 26rpx;
+  padding-top: 0;
+}
+.actionS,
+.bottonBtn{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30rpx;
+}
+.actionS{
+  height: 400rpx;
+}
+.selectType .actionS view{
+  padding: 0;
+}
+.actionS>view,
+.bottonBtn>view{
+  width: 48.5%;
+  height: 100%;
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+.actionS image{
+  width: 100%;
+  height: 100%;
+}
+.rightImgBox>view{
+  width: 100%;
+  height: 200rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+.rightImgBox>view:nth-of-type(1){
+  margin-bottom: 20rpx;
+}
+.selectType>.bottonBtn>view{
+  padding: 20rpx;
+}
+.bottonBtn>view{
+  border: 1px solid #efefef;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: relative;
+}
+.bottonBtn{
+  box-sizing: border-box;
+}
+.titleB{
+  font-size: 32rpx;
+  font-weight: 600;
+}
+.readNum{
+  font-size: 24rpx;
+  color: #999;
+  margin: 10rpx 0;
+}
+.bottonBtn>view>view>view{
+  font-size: 24rpx;
+  border-radius: 50rpx;
+  border: 1px solid #658aee;
+  color: #658aee;
+  padding: 2rpx 20rpx;
+  display: inline-block;
+}
+.bottonBtn>view>image{
+  position: absolute;
+  right: 20rpx;
+  bottom: 10rpx;
+  width: 80rpx;
+  height: 80rpx;
 }

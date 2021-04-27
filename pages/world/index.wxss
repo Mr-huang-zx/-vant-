@@ -6,6 +6,7 @@
 .topBox>view{
   position: absolute;
   z-index: 5;
+  font-size: 32rpx;
 }
 .putStarBox{
   width: 92%;
@@ -120,18 +121,43 @@
     transform: scale(1);
   }
 }
+.toastBoxss{
+  width:60%;
+  height:40rpx;
+  margin-left:20%;
+  margin-bottom: 10rpx;
+  position: relative;
+}
+.toastBoxss>image{
+  width:100%;
+  height:100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.toastBoxss>text{
+  font-size: 19rpx;
+  color: #333;
+  position: absolute;
+  z-index: 5;
+  left: 11%;
+  top: 10%;
+}
 .putStarBox>view>view{
   width: 100rpx;
   height: 100rpx;
   position: relative;
+  margin-bottom: 10rpx;
 }
 .putStarBox>view>view>text{
   position: absolute;
-  font-weight: bold;
+  font-weight: 600;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
   z-index: 5;
+  font-size: 32rpx;
 }
 .putStarBox>view>view>image{
   width: 100rpx;
@@ -150,22 +176,26 @@
 }
 .topLine{
   width: 94%;
-  margin-left: 3%;
+  margin:20rpx 3%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   
 }
 .noticeBox{
-  width: 80%;
+  width: 82%;
+  height: 60rpx;
 }
+
 .guizBtn{
   background-color:#658aee;
   color:white;
-  height:50rpx;
   padding: 6rpx 20rpx;
   border-radius: 10rpx;
-  margin-top: 10rpx;
+  font-size: 32rpx;
+}
+.van-notice-bar{
+  margin-bottom: 0 !important;
 }
 .actionBox{
   width: 92%;
@@ -178,30 +208,31 @@
 .topBoxs{
   display:flex;
   justify-content: space-between;
+  font-size: 34rpx;
 }
 .topBoxs>view{
   width: 32%;
   border: 1px solid #ebebeb;
   border-radius: 10px;
-  padding: 20rpx;
+  padding: 30rpx 34rpx;
   box-sizing: border-box;
   text-align: center; 
+  display: flex;
+  flex-direction: column;
 }
 .topBoxs>view>view{
-  display: flex;
-  
-  align-items: center;
   font-size: 34rpx;
   font-weight: bold;
+  margin-bottom: 6rpx;
+  display: inline-block;
 }
 .topBoxs>view image{
-  width: 65rpx;
-  height: 65rpx;
+  vertical-align: sub;
 }
 .inviteBox{
   margin-top: 30rpx;
   border: 1px solid #ebebeb;
-  padding: 20px;
+  padding: 16px;
   box-sizing: border-box;
   border-radius: 10px;
   display: flex;
@@ -214,11 +245,29 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 32rpx;
+}
+.addPur{
+  color: #7715c1;
+}
+.cirqu{
+  color: white;
+  font-size: 32rpx;
+  font-weight: bold;
+  text-align: center;
+  line-height: 40rpx;
+  padding: 0 12rpx;
+  box-sizing: border-box;
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  background-color: #7715c1d6;
 }
 .inviteBox>view>view{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 30rpx;
 }
 .topToast>image{
   width: 40rpx;
@@ -227,6 +276,7 @@
 .inviteNum{
   border-bottom: 1px solid #f1f1f1;
   padding: 16rpx 0;
+  font-size: 32rpx;
 }
 .inviteNum image{
   width: 60rpx;
@@ -234,11 +284,11 @@
   margin-right: 10rpx;
 }
 .rightBtn{
-  border: 1px solid #658aee;
-  color: #658aee;
+  border: 1px solid #7715c1;
+  color: #7715c1;
   font-size: 26rpx;
-  padding: 4px 20px;
-  border-radius: 30px;
+  padding: 2px 16px;
+  border-radius: 10px;
 }
 .inviteBox>.inviteBtn{
   width: auto;

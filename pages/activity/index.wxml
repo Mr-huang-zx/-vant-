@@ -22,5 +22,75 @@
       </view>
       <view class="guizBtn">规则</view>
     </view>
+    <view class="topTitle">PK抢答-专题赛</view>
   </view>
+  <!-- 参与 -->
+  <view class="selectType">
+    <!-- 1 -->
+    <view>
+      <!-- 1 -->
+      <view class="toastWord">
+        <image src="/assets/image/glod_icon.png"></image>
+        <text>戳下方，参与PK抢答赢取限量皮肤</text>
+      </view>
+      <!-- 游戏选择 -->
+      <view class="selectBox">
+        <!-- 1 -->
+        <view>
+          <view>
+            <image class="gifts" src="/assets/image/lucky_bottle.png"></image>
+            <view class="circleS"></view>
+          </view>
+          <text>王者荣耀</text>
+        </view>
+        <!-- 2 -->
+        <view>
+          <view>
+            <image class="gifts" src="/assets/image/lucky_bottle.png"></image>
+            <view class="circleS"></view>
+          </view>
+          <text>王者荣耀</text>
+        </view>
+        <view>
+          <view>
+            <image class="gifts" src="/assets/image/lucky_bottle.png"></image>
+            <view class="circleS"></view>
+          </view>
+          <text>王者荣耀</text>
+        </view>
+      </view>
+      <view class="toastWs">提示：每日首次参赛无需观看视频</view>
+    </view>
+    <!-- 活动 -->
+    <view class="actionS">
+      <view>
+        <image src="/assets/image/wangzhe.jpg"></image>
+      </view>
+      <!-- 右 -->
+      <view class="rightImgBox">
+        <view><image src="/assets/image/wangzhe.jpg"></image></view>
+        <view><image src="/assets/image/wangzhe.jpg"></image></view>
+      </view>
+    </view>
+    <view class="bottonBtn">
+      <!-- 1 -->
+      <view>
+        <text class="titleB">如何联系【多鱼】</text>
+        <text class="readNum">阅读量:20万+</text>
+        <view>
+          <view>查看 ></view>
+        </view>
+        <image src="/assets/image/lucky_bottle.png"></image>
+      </view>
+      <view>
+        <text class="titleB">如何联系【多鱼】</text>
+        <text class="readNum">阅读量:20万+</text>
+        <view>
+          <view>查看 ></view>
+        </view>
+        <image src="/assets/image/lucky_bottle.png"></image>
+      </view>
+    </view>
+  </view>
+  
 </view>

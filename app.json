@@ -1,44 +1,40 @@
 {
 
   "pages": [
-    "component/pa_lou/index",
-
-    "pages/activity/index",
-
-    "pages/world/index",
     "pages/store/index",
-    
     "pages/my/index",
+    "pages/activity/index",
+    "pages/world/index",
     "pages/store/tabs/index",
-
-
-
+    "component/pa_lou/index",
     "component/loading/index"
 
   ],
   "tabBar": {
-    "color": "red",
+    "color":"#999",
+    "selectedColor":"#7715c1",
     "list": [
       {
         "pagePath": "pages/store/index",
         "text": "商城",
-        "iconPath": "/assets/image/header.png",
-        "selectedIconPath": "/assets/image/header.png"
+        "iconPath": "/assets/image/fuli_hui.png",
+
+        "selectedIconPath": "/assets/image/fuli.png"
       },{
         "pagePath": "pages/world/index",
         "text": "世界",
-        "iconPath": "/assets/image/header.png",
-        "selectedIconPath": "/assets/image/header.png"
+        "iconPath": "/assets/image/gongluehui.png",
+        "selectedIconPath": "/assets/image/gonglue.png"
       }, {
         "pagePath": "pages/activity/index",
         "text": "活动",
-        "iconPath": "/assets/image/header.png",
-        "selectedIconPath": "/assets/image/header.png"
+        "iconPath": "/assets/image/mianfeinahui.png",
+        "selectedIconPath": "/assets/image/mianfeina.png"
       }, {
         "pagePath": "pages/my/index",
         "text": "我的",
-        "iconPath": "/assets/image/header.png",
-        "selectedIconPath": "/assets/image/header.png"
+        "iconPath": "/assets/image/wodehui.png",
+        "selectedIconPath": "/assets/image/wode.png"
       }
     ]
   },
