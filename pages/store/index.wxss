@@ -7,7 +7,7 @@ page{
   padding: 0 30rpx 0 40rpx;
   box-sizing: border-box;
 }
-.flexCenter>image{
+.flexCenter image{
   width: 70rpx;
   height: 56rpx;
   animation: sacN infinite 1s;

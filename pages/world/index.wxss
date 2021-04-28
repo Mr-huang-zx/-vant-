@@ -192,7 +192,7 @@
   color:white;
   padding: 6rpx 20rpx;
   border-radius: 10rpx;
-  font-size: 32rpx;
+  font-size: 30rpx;
 }
 .van-notice-bar{
   margin-bottom: 0 !important;
@@ -292,11 +292,11 @@
 }
 .inviteBox>.inviteBtn{
   width: auto;
-  padding: 6rpx 80rpx;
+  padding: 8rpx 64rpx;
   color: white;
   font-weight: bold;
   font-size: 30rpx;
-  background-color: #658aee;
+  background-color: #7715c1;
   border-radius: 10px;
   margin-bottom: 0;
 }

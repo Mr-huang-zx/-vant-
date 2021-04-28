@@ -1,0 +1,51 @@
+<!--pages/store/gift/index.wxml-->
+<view>
+  <view class="outBox">
+    <view class="topImg">
+      <image src="/assets/image/store/clockin_text.png"></image>
+    </view>
+    <!-- 爬楼 -->
+    <view class="noticeBox">
+      <!-- 文字爬楼 -->
+      <view class='scroll-box'>
+        <view class='item-box'>
+          <view class='scroll {{trans}}' style='top:{{-top}}px'>
+            <view class='item'>：本周精选欢迎采购！</view>
+            <view class='item'>精选欢迎采购！</view>
+            <view class='item'>3每周精选上新：本周精选欢迎采购！</view>
+            <view class='item'>4每周精选上新：本周精选欢迎采购！</view>
+            <view class='item'>5每周精选上新：本周精选欢迎采购！</view>
+            <view class='item'>6每周精选上新：本周精选欢迎采购！</view>
+            <view class='item'>7每周精选上新：本周精选欢迎采购！</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="bottomBox">
+      <text class="titleWtxt">连续打卡10天，获得限量皮肤</text>
+      <!-- 蜂窝六边形 -->
+      <view class="fengwoBox">
+        <view>
+          <!-- 1 -->
+          <block wx:for="{{list}}" wx:key="item">
+            <view class="outV" data-indexs="{{index}}" catchtap="selectThis">
+              <view class="inView">
+                <image src="/assets/image/store/touxiang41.png"></image>
+                <!-- 遮罩 -->
+                <view class="zhezhao" wx:if="{{toggleIndex !== index}}"></view>
+                <!-- 介绍 -->
+                <view class="introWord">
+                  <text>{{item.name}}</text>
+                  <text style="color:#39a9de;">金属狂野</text>
+                </view>
+              </view>
+            </view>
+          </block>
+        </view>
+      </view>
+    </view>
+    <view class="bottonBtn">
+     
+    </view>
+  </view>
+</view>

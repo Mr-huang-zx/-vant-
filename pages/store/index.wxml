@@ -3,7 +3,9 @@
 <view>
  <!-- 头部 -->
  <view class="flexCenter">
-  <image src="/assets/image/store/clockin_daka.png"></image>
+  <navigator url="./gift/index">
+    <image src="/assets/image/store/clockin_daka.png"></image>
+  </navigator>
   <view class="iptBox">
     <icon type="search" size="16"></icon>
     <view>搜索您想要的福利</view>

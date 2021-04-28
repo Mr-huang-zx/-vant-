@@ -1,7 +1,9 @@
 {
 
   "pages": [
+    "pages/store/gift/index",
     "pages/store/index",
+   
     "pages/my/index",
     "pages/activity/index",
     "pages/world/index",

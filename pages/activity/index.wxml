@@ -4,7 +4,7 @@
     <view class="topLine">
       <view class="noticeBox">
         <!-- 文字爬楼 -->
-        <image style="width:30rpx;height:30rpx;" src="/assets/image/glod_icon.png"></image>
+        <image style="width:30rpx;height:32rpx;margin-left:6rpx" src="/assets/image/active/laba.png"></image>
         <view class='scroll-box'>
           <view class='item-box'>
             <view class='scroll {{trans}}' style='top:{{-top}}px'>
@@ -80,7 +80,7 @@
         <view>
           <view>查看 ></view>
         </view>
-        <image src="/assets/image/lucky_bottle.png"></image>
+        <image src="/assets/image/active/liwu.png"></image>
       </view>
       <view>
         <text class="titleB">如何联系【多鱼】</text>

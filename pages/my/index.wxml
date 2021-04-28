@@ -4,18 +4,18 @@
     <!-- 头部 -->
     <!-- <image src="/assets/image/"></image> -->
     <view class="topLan">
-      <image src="/assets/image/glod_icon.png"></image>
+      <image src="/assets/image/my/shezhi.png"></image>
       <view>
-        <image src="/assets/image/glod_icon.png" style="margin-right:30rpx;"></image>
-        <image src="/assets/image/glod_icon.png"></image>
+        <image src="/assets/image/my/toast.png" style="margin-right:30rpx;"></image>
+        <image src="/assets/image/my/customer_ser.png"></image>
       </view>
     </view>
     <!-- 头像部分 -->
     <view class="headerBox">
       <view class="headerImg">
-        <image src="/assets/image/header.png"></image>
+        <open-data type="userAvatarUrl"></open-data>
       </view>
-      <text>djhaoidjodj</text>
+      <open-data type="userNickName"></open-data>
       <view class="inforBox">
         <view>活跃度：14</view>
         <view>金币：4286</view>
@@ -27,20 +27,20 @@
     <!-- 1 -->
     <view class="actionBtn">
       <view>
-        <image src="/assets/image/header.png"></image>
+        <image src="/assets/image/my/my_haoyou.png"></image>
         <text>邀请好友</text>
       </view>
       <view>
-        <image src="/assets/image/header.png"></image>
-        <text>邀请好友</text>
+        <image src="/assets/image/my/my_sign.png"></image>
+        <text>每日签到</text>
       </view>
       <view>
-        <image src="/assets/image/header.png"></image>
-        <text>邀请好友</text>
+        <image src="/assets/image/my/my_jilu.png"></image>
+        <text>兑换记录</text>
       </view>
       <view>
-        <image src="/assets/image/header.png"></image>
-        <text>邀请好友</text>
+        <image src="/assets/image/my/my_kefu.png"></image>
+        <text>联系客服</text>
       </view>
     </view>
     <!-- 2 -->

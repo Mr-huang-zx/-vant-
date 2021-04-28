@@ -26,5 +26,12 @@
 .scroll.trans {
   transition: all 0.24s;
 }
+
+.van-notice-bar{
+  border-radius: 12rpx;
+  margin-bottom: 16rpx;
+  height: 100rpx !important;
+}
+
 /* end */
 

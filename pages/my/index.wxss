@@ -23,8 +23,8 @@
   justify-content: space-between;
 }
 .topLan image{
-  width: 60rpx;
-  height: 60rpx;
+  width: 46rpx;
+  height: 46rpx;
 }
 .headerBox{
   width: 60%;
@@ -46,7 +46,7 @@
   width: 100%;
   height: 100%;
 }
-.headerBox>text{
+.headerBox>open-data{
   margin: 16rpx 0;
 }
 .inforBox{
@@ -89,8 +89,8 @@
   font-size: 32rpx;
 }
 .actionBtn>view>image{
-  width: 80rpx;
-  height: 80rpx;
+  width: 72rpx;
+  height: 75rpx;
   margin-bottom: 20rpx;
 }
 .swiperBox{
