@@ -5,7 +5,7 @@
       <image src="/assets/image/store/clockin_text.png"></image>
     </view>
     <!-- 爬楼 -->
-    <view class="noticeBox">
+    <view class="noticeBox" wx:if="{{isShow || okShow || showToa}}">
       <!-- 文字爬楼 -->
       <view class='scroll-box'>
         <view class='item-box'>
@@ -21,9 +21,9 @@
         </view>
       </view>
     </view>
-    <view class="bottomBox">
+    <!-- 蜂窝六边形 -->
+    <view class="bottomBox" wx:if="{{isShow}}">
       <text class="titleWtxt">连续打卡10天，获得限量皮肤</text>
-      <!-- 蜂窝六边形 -->
       <view class="fengwoBox">
         <view>
           <!-- 1 -->
@@ -44,8 +44,80 @@
         </view>
       </view>
     </view>
-    <view class="bottonBtn">
-     
+
+    <!-- 选择礼物后显示 -->
+    <block wx:if="{{!isShow && showIpt}}">
+      <view class="toastShow" wx:if="{{!isShow}}">
+        <text>请输入您的正确信息</text>
+        <text>否则奖励将无法正常发放哦!</text>
+      </view>
+      <view class="gameArea">
+        <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange"
+          value="{{multiIndex}}" range="{{multiArray}}">
+          <view class="picker">
+            当前选择：{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}，{{multiArray[2][multiIndex[2]]}}
+          </view>
+        </picker>
+      </view>
+      <view class="gameArea">
+        <input type="text" placeholder="请在此输入用户昵称" model:value="{{userName}}" bindinput="serModeVal"/>
+      </view>
+    </block>
+    <block wx:if="{{!isShow && !showIpt && showToa}}">
+      <view class="lastBox firstImg">
+        <view class="addColors">已连续打卡<text style="color: white;font-size: 46rpx;font-weight: bold;">0/10</text>天
+        </view>
+        <view class="sibain">
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+        </view>
+        <text style="color:#999;font-size:28rpx;">再看12次广告完成今日打卡(0/12)</text>
+      </view>
+      <!-- 下框 -->
+      <view class="lastBox lastImg">
+        <view class="fengwoBox onrLiu">
+          <view style="justify-content: center;padding:0;">
+            <!-- 1 -->
+              <view class="outV" style="margin:0;width: 250rpx;height: 290rpx;">
+                <view class="inView" style="width: 250rpx;height: 290rpx;">
+                  <image src="/assets/image/store/touxiang41.png"></image>
+                  <!-- 介绍 -->
+                  <view class="introWord" style="color:24rpx;">
+                    <text>金属狂野</text>
+                    <text style="color:#39a9de;">金属狂野</text>
+                  </view>
+                </view>
+                
+              </view>
+          </view>
+          <!-- 点击更换奖励 -->
+          <view class="changeReward" bindtap="showPopFun" >
+            <text><text class="iconfont iconshuaxin" style="font-size: 30rpx;"></text> 更换奖励</text>
+          </view>
+        </view>
+        <view class="selectNames">虞姬-启明星使</view>
+        <view class="bottonBtn toClock" catchtap="" style="margin-top:58rpx;height:102rpx;"></view>
+      </view>
+    </block>
+    <!-- 领取按钮 -->
+    <view class="bottonBtn isSureBtn" catchtap="getFun" wx:if="{{showBtn}}"></view>
+  </view>
+  <!-- 提醒 -->
+  <van-toast id="van-toast" />
+  <!-- 弹出层 -->
+  <view class="popBox" catchtouchmove='true' wx:if="{{showPop}}">
+    <view>
+      <view class="changeRew">更换奖励</view>
+      <view class="toastMain">更新奖励后打卡次数与天数将全部清零确认提前结束吗?</view>
+      <view class="bottonBtn containerBtn" catchtap="closePop" ></view>
+      <view class="leaveBtn" catchtap="sureLeave">确认离开</view>
     </view>
   </view>
 </view>

@@ -1,6 +1,7 @@
 
 
-
+import Toast from '../miniprogram_npm/vant-weapp/toast/toast';
+export { Toast }
 // 2021/04/23 10:07:46 时间格式
 export function formatTime(date){
   const year = date.getFullYear()

@@ -1,5 +1,8 @@
 {
-
+  "usingComponents": {
+    "van-toast": "/miniprogram_npm/vant-weapp/toast/index",
+    "van-popup": "/miniprogram_npm/vant-weapp/popup/index"
+  },
   "pages": [
     "pages/store/gift/index",
     "pages/store/index",
