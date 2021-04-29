@@ -8,11 +8,20 @@ Component({
     hei:0,//手指按下的高度
     topPo:-45,
     showType:1,
+    showChangePop:false,//兑换弹窗
   },
   methods:{
+    // 关闭弹窗
+    closeToast(){
+      this.setData({
+        showChangePop:false
+      })
+    },
     // 兑换金币
     getGold(){
-      console.log(1)
+      this.setData({
+        showChangePop:true
+      })
     },
     // 滚动到底部
     toBottom(e){

@@ -1,11 +1,14 @@
 {
   "usingComponents": {
-    "van-toast": "/miniprogram_npm/vant-weapp/toast/index",
-    "van-popup": "/miniprogram_npm/vant-weapp/popup/index"
+    "van-toast": "/miniprogram_npm/vant-weapp/toast/index"
   },
-  "pages": [
-    "pages/store/gift/index",
+  "pages": [    
     "pages/store/index",
+    "pages/store/flash_sale/index",
+
+    "pages/store/gift/index",
+    
+    
    
     "pages/my/index",
     "pages/activity/index",

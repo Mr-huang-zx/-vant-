@@ -1,50 +1,93 @@
-
-  <view
-    style="position:relative;top:{{topPo>65?65+'px':topPo+'px'}};height:100%;"
-    bindtouchstart="bindStart" 
-    bindtouchmove="bindMove"
-    bindtouchend="bingEnd" >
-    <view class="loding">
-      <view class="loadingStatus" wx:if="{{showType==1}}">
-        <van-icon name="down" />
-        <text style="margin-left:20rpx;" class="iconfont iconjiantou">下拉刷新</text>
-      </view>
-      <view class="loadingI"  wx:if="{{showType==2}}">
-        <van-loading type="spinner" size="40rpx;"/>
-        <text style="margin-left:20rpx;" class="iconfont iconjiantou">刷新中...</text>
-      </view>
-      <view class="moveOut" wx:if="{{showType==3}}">
-        <view style="margin-left:20rpx;" class="iconfont iconjiantou" style="transform:rotate(180deg);">松开刷新</view>
-        <van-icon name="down"/>
-        
-      </view>
+<view style="position:relative;top:{{topPo>65?65+'px':topPo+'px'}};height:100%;" bindtouchstart="bindStart"
+  bindtouchmove="bindMove" bindtouchend="bingEnd">
+  <view class="loding">
+    <view class="loadingStatus" wx:if="{{showType==1}}">
+      <van-icon name="down" />
+      <text style="margin-left:20rpx;" class="iconfont iconjiantou">下拉刷新</text>
     </view>
-    <view class="list_box">
-      <view class="imgBox">
-        <!-- 金币 -->
-        <view class="views golds">
-          <image class="glodIcon" src="/assets/image/glod_icon.png"></image>
-          <text>1200金币</text>
-        </view>
-        <!-- 图 -->
-        <image class="image" src="/assets/image/wangzhe.jpg"></image>
-        <!-- 兑换件数 -->
-        <text class="haveChange">已兑12055件</text>
-        <!-- 点击获取金币 -->
-        <view class="views btnChnge" catchtap="getGold">
-          获取金币
-        </view>
-        <!-- 名称 -->
-        <view class="views introName">
-          雅典娜-神奇女侠
-        </view>
-      </view>
-    </view>
-  </view>
-  <view class="boxLoaing">
-    <view class="boxVie">
-      <van-loading type="spinner" size="40rpx;"/>
+    <view class="loadingI" wx:if="{{showType==2}}">
+      <van-loading type="spinner" size="40rpx;" />
       <text style="margin-left:20rpx;" class="iconfont iconjiantou">刷新中...</text>
     </view>
+    <view class="moveOut" wx:if="{{showType==3}}">
+      <view style="margin-left:20rpx;" class="iconfont iconjiantou" style="transform:rotate(180deg);">松开刷新</view>
+      <van-icon name="down" />
+
+    </view>
+  </view>
+  <!-- 限时抢购 -->
+  <navigator url="/pages/store/flash_sale/index">
+    <view class="timeToBug">
+      <view class="topFirst">
+        <text>限时抢购</text>
+        <view>
+          <view style="background-color:red;color:white">18:00场</view>
+          <view>距开始02:52:28</view>
+        </view>
+      </view>
+      <view class="bottomBoxss">
+        <!-- 1 -->
+        <view>
+          <image src="/assets/image/world/lucky_bottle.png"></image>
+          <text style="margin:16rpx 0;">迷你币*500</text>
+          <text style="margin-bottom:30rpx;"><text style="color:#9e47fd;margin-right:6rpx;">1金币</text><text
+              style="text-decoration: line-through;color:#999;"> 9999</text></text>
+        </view>
+        <view>
+          <image src="/assets/image/world/lucky_bottle.png"></image>
+          <text style="margin:16rpx 0;">迷你币*500</text>
+          <text style="margin-bottom:30rpx;"><text style="color:#9e47fd;margin-right:6rpx;">1金币</text><text
+              style="text-decoration: line-through;color:#999;"> 9999</text></text>
+        </view>
+        <view>
+          <image src="/assets/image/world/lucky_bottle.png"></image>
+          <text style="margin:16rpx 0;">迷你币*500</text>
+          <text style="margin-bottom:30rpx;"><text style="color:#9e47fd;margin-right:6rpx;">1金币</text><text
+              style="text-decoration: line-through;color:#999;"> 9999</text></text>
+        </view>
+
+      </view>
+    </view>
+  </navigator>
+  <!-- 1 -->
+  <view class="list_box" catchtap="getGold">
+    <view class="imgBox">
+      <!-- 金币 -->
+      <view class="views golds">
+        <image class="glodIcon" src="/assets/image/glod_icon.png"></image>
+        <text>1200金币</text>
+      </view>
+      <!-- 图 -->
+      <image class="image" src="/assets/image/wangzhe.jpg"></image>
+      <!-- 兑换件数 -->
+      <text class="haveChange">已兑12055件</text>
+      <!-- 点击获取金币 -->
+      <view class="views btnChnge" catchtap="getGold">
+        获取金币
+      </view>
+      <!-- 名称 -->
+      <view class="views introName">
+        雅典娜-神奇女侠
+      </view>
+    </view>
+  </view>
+</view>
+<view class="boxLoaing">
+  <view class="boxVie">
+    <van-loading type="spinner" size="40rpx;" />
+    <text style="margin-left:20rpx;" class="iconfont iconjiantou">刷新中...</text>
   </view>
 
+  <!-- 弹出层 -->
+  <view class="popBox" catchtouchmove='true' wx:if="{{showChangePop}}">
+    <view>
+      <!-- 关闭按钮 -->
+      <view class="closeIcon"  catchtap="closeToast"></view>
+      <image class="middleImg" src="/assets/image/world/lucky_bottle.png"></image>
+      <view class="titleSt">——— 温馨提示 ———</view>
+      <view class="exchangeToast">是否使用100金币兑换{某某礼包}</view>
+      <button class="sureExchangeBtn">确认兑换</button>
+      <text catchtap="closeToast">取消</text>
+    </view>
+  </view>
+</view>

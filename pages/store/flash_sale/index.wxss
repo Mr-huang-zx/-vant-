@@ -1,0 +1,91 @@
+page{
+  background-color: rgb(238, 238, 238);
+}
+page>view{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.topBanner{
+  width: 100%;
+  position: relative;
+  color: white;
+  height: 350rpx;
+}
+.topBanner>image{
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.sessionBox{
+  width: 82%;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 1px 1px 5px #b5b5b5;
+  border-radius: 20rpx;
+  margin-top: 40rpx; 
+}
+.sessionBox>view{
+  display: flex;
+  flex-direction: column;
+  color: #999;
+  font-size: 30rpx;
+  align-items: center;
+  padding: 14rpx 30rpx;
+}
+.bottomMainBox{
+  width: 92%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 36rpx;
+}
+.howMany{
+  margin-top: 40rpx ;
+  display: flex;
+  flex-direction: row;
+}
+.howMany>view{
+  padding: 6rpx 10rpx;
+  border-radius: 10rpx;
+  background-color: black;
+  color: white;
+  margin: 0 6rpx;
+}
+.storeBox{
+  width: 100%;
+  height: 450rpx;
+  overflow-y: scroll;
+}
+.storeBox>view{
+  
+  box-sizing: border-box;
+  border-radius: 16rpx;
+  box-shadow: 1px 1px 5px #b5b5b5;
+  margin: 38rpx 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30rpx;
+  width: 94%;
+  margin-left: 3%;
+}
+.leftMain{
+  display:flex;flex-direction: row;
+}
+.storeBox>view image{
+  width: 80rpx;
+  height: 80rpx;
+  margin-right: 40rpx;
+  
+}
+.storeBox button{
+  font-size: 28rpx;
+  margin: 0;
+  color: orange;
+  border: 1px solid orange;
+  border-radius: 10rpx;
+}

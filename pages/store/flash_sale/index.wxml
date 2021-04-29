@@ -1,0 +1,39 @@
+<view>
+  <!-- banner -->
+  <view class="topBanner">
+    <image src="/assets/image/store/miaosha_bg.png"></image>
+  </view>
+  <!-- 场次 -->
+  <view class="sessionBox">
+    <view wx:for="{{sessionList}}" wx:key="index">
+      <text style="font-weight:bold;font-size:40rpx;margin-bottom:10rpx;">{{item.startTime}}</text>
+      <text>即将开始</text>
+    </view>
+  </view>
+  <!--  -->
+  <view class="bottomMainBox">
+    <!-- 倒计时 -->
+    <view class="howMany">
+      <text style="margin-right:10rpx;">离本场开始 </text>
+      <view >14</view> :
+      <view>14</view> :
+      <view>14</view>
+    </view>
+    <!-- 对应的活动商品 -->
+    <view class="storeBox">
+      <view wx:for="{{storeList}}" wx:key="index">
+        <view class="leftMain">
+          <image src="{{item.image}}"></image>
+          <view>
+            <view>{{item.name}}</view>
+            <view style="color:red;">{{item.goldNum}} <text style="font-size:26rpx;">金币 <text style="color:#999;text-decoration: line-through;">{{item.saleGold}}</text></text></view>
+          </view>
+        </view>
+        <!-- 提醒 -->
+        <button catchtap="remindFun">提醒我</button>
+      </view>
+    </view>
+  </view>
+    <!-- 提醒 -->
+    <van-toast id="van-toast" />
+</view>
