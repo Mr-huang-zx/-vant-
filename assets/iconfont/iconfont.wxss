@@ -69,6 +69,8 @@
   height: 80rpx !important;
   line-height: 80rpx !important;
 }
-
+.bgs{
+  background-size: 100% 100%;
+}
 
 

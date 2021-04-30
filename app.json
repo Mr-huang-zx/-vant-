@@ -2,19 +2,20 @@
   "usingComponents": {
     "van-toast": "/miniprogram_npm/vant-weapp/toast/index"
   },
-  "pages": [    
+  "pages": [
+    "pages/world/index",
+    "pages/world/get_card/index", 
+    "pages/world/get_card_after/index",
+    "pages/world/sign_in/index",
     "pages/store/index",
     "pages/store/flash_sale/index",
-
     "pages/store/gift/index",
-    
-    
-   
     "pages/my/index",
     "pages/activity/index",
-    "pages/world/index",
+    
     "pages/store/tabs/index",
     "component/pa_lou/index",
+    "component/new_user_pop/index",
     "component/loading/index"
 
   ],
@@ -49,9 +50,9 @@
 
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#7715c1",
     "navigationBarTitleText": "多鱼",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "white"
   },
   "sitemapLocation": "sitemap.json"
 

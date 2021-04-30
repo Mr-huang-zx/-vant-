@@ -1,0 +1,5 @@
+<view class="new_pop" catchtouchmove="false">
+  <view>
+    <image src="/assets/image/dialog_novice_bg.png"></image>
+  </view>
+</view>

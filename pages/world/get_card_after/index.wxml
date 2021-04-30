@@ -1,0 +1,136 @@
+<!-- 领取后的弹窗 -->
+<view class="getPop" catchtouchmove="false" wx:if="{{false}}">
+  <view>
+
+  </view>
+</view>
+<!-- 领取后的界面 -->
+<view class="outBox">
+  <view class="firstBox"></view>
+  <view class="secondB">
+    <!-- 文字爬楼 -->
+    <view style="display:flex;">
+      <!-- <image style="width:30rpx;height:30rpx;" src="/assets/image/glod_icon.png"></image> -->
+      <view class='scroll-box'>
+        <view class='item-box'>
+          <view class='scroll {{trans}}' style='top:{{-top}}px'>
+            <view class='item'><text>1每周精选上新</text>：本周精选欢迎采购！</view>
+            <view class='item'><text>2每周精选上新</text>：本周精选欢迎采购！</view>
+            <view class='item'><text>3每周精选上新</text>：本周精选欢迎采购！</view>
+            <view class='item'><text>4每周精选上新</text>：本周精选欢迎采购！</view>
+            <view class='item'><text>5每周精选上新</text>：本周精选欢迎采购！</view>
+            <view class='item'><text>6每周精选上新</text>：本周精选欢迎采购！</view>
+            <view class='item'><text>7每周精选上新</text>：本周精选欢迎采购！</view>
+            <view class='item'><text>8每周精选上新</text>：本周精选欢迎采购！</view>
+   
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="secondBox">
+    <image class="bgImgsMei" src="/assets/image/world/meisui_new.png"></image>
+    <image class="buttonImg" src="/assets/image/world/meisui_btn.png"></image>
+  </view>
+  <view class="fourthBox">
+    <!-- 1 -->
+    <view class="topINtro">
+      <text>2天11:50:49后活动结束</text>
+      <view catchtap="earlyEnd">提前结束</view>
+    </view>
+    <!-- 2拼图 -->
+    <view class="getPic">
+      <!-- 1 -->
+      <view>
+        <image src="/assets/image/world/ic_patch_1_0.png"></image>
+        <view>0/2</view>
+      </view>
+      <!-- 2 -->
+      <view>
+        <image src="/assets/image/world/ic_patch_2_0.png"></image>
+        <view>0/2</view>
+      </view>
+      <!-- 3 -->
+      <view>
+        <image src="/assets/image/world/ic_patch_3_0.png"></image>
+        <view>0/2</view>
+      </view>
+      <!-- 4 -->
+      <view>
+        <image src="/assets/image/world/ic_patch_4_0.png"></image>
+        <view>0/2</view>
+      </view>
+      <!-- 5 -->
+      <view>
+        <image src="/assets/image/world/ic_patch_5_0.png"></image>
+        <view>0/2</view>
+      </view>
+      <!-- 6 -->
+      <view>
+        <image src="/assets/image/world/ic_patch_6_0.png"></image>
+        <view>0/2</view>
+      </view>
+      <!-- 7 -->
+      <view>
+        <image src="/assets/image/world/ic_patch_7_0.png"></image>
+        <view>0/2</view>
+      </view>
+      <!-- 8 -->
+      <view>
+        <image src="/assets/image/world/ic_patch_8_0.png"></image>
+        <view>0/2</view>
+      </view>
+      <!-- 9 -->
+      <view>
+        <image src="/assets/image/world/ic_patch_9_0.png"></image>
+        <view>0/2</view>
+      </view>
+    </view>
+    <view style="font-size:30rpx;margin-bottom: 20rpx;">集齐2套可兑换锦绣火离</view>
+    <view class="getBtn">集成锦绣火离</view>
+  </view>
+  <view class="fifthBox">
+    <!-- 1 -->
+    <view>
+      <view class="leftBoxs">
+        <view class="bgImg bgPic_1"></view>
+        <view>
+          <view>分享应用 (0/1)</view>
+          <view style="font-size:28rpx;color:#999;">必得2号卡</view>
+        </view>
+      </view>
+      <button>去完成</button>
+    </view>
+    <!-- 2 -->
+    <view>
+      <view class="leftBoxs ">
+        <view class="bgImg bgPic_2"></view>
+        <view>
+          <view>看视频 (0/1)</view>
+          <view style="font-size:28rpx;color:#999;">必得5号卡</view>
+        </view>
+      </view>
+      <button>去完成</button>
+    </view>
+    <!-- 3 -->
+    <view>
+      <view class="leftBoxs">
+        <view class="bgImg bgPic_3"></view>
+        <view>
+          <view>签到 (0/1)</view>
+          <view style="font-size:28rpx;color:#999;">必得4号卡</view>
+        </view>
+      </view>
+      <button>去完成</button>
+    </view>
+  </view>
+  <view class="lastBox">
+    <image src="/assets/image/world/chaongdianzhan_new.png"></image>
+    <view>
+      <text>0</text>
+      <view class="scroolBox">
+        <view style="{{'width:'+scrowID+'%'}}"></view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,4 +1,6 @@
 <view>
+<!-- 签到弹窗 -->
+  <sign-in-pop wx:if="{{false}}"></sign-in-pop>
   <!-- 头部 -->
   <view class="topBox">
     <!-- 通知栏 -->
@@ -51,7 +53,7 @@
         </view>
         看视频
       </view>
-      <view class="star_6">
+      <view class="star_6" catchtap="togetCard">
         <view>
           <image src="/assets/image/world/dark_star_icon.png"></image>
           <text>+1</text>

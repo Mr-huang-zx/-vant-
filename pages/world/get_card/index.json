@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "get_card_after":"../get_card_after/index"
+  },
+  "navigationBarTitleText": "集卡领福利"
+
+}

@@ -3,19 +3,19 @@
   <!-- 文字爬楼 -->
   <view style="display:flex;">
     <!-- <image style="width:30rpx;height:30rpx;" src="/assets/image/glod_icon.png"></image> -->
-  <view class='scroll-box'>
-    <view class='item-box'>
-      <view class='scroll {{trans}}' style='top:{{-top}}px'>
-        <view class='item'>4每周精选上新：本周精选欢迎采购！</view>
-        <view class='item'>1每周精选上新：本周精选欢迎采购！</view>
-        <view class='item'>2每周精选上新：本周精选欢迎采购！</view>
-        <view class='item'>3每周精选上新：本周精选欢迎采购！</view>
-        <view class='item'>4每周精选上新：本周精选欢迎采购！</view>
-        <view class='item'>5每周精选上新：本周精选欢迎采购！</view>
-        <view class='item'>6每周精选上新：本周精选欢迎采购！</view>
-        <view class='item'>7每周精选上新：本周精选欢迎采购！</view>
+    <view class='scroll-box'>
+      <view class='item-box'>
+        <view class='scroll {{trans}}' style='top:{{-top}}px'>
+          <view class='item'>4每周精选上新：本周精选欢迎采购！</view>
+          <view class='item'>1每周精选上新：本周精选欢迎采购！</view>
+          <view class='item'>2每周精选上新：本周精选欢迎采购！</view>
+          <view class='item'>3每周精选上新：本周精选欢迎采购！</view>
+          <view class='item'>4每周精选上新：本周精选欢迎采购！</view>
+          <view class='item'>5每周精选上新：本周精选欢迎采购！</view>
+          <view class='item'>6每周精选上新：本周精选欢迎采购！</view>
+          <view class='item'>7每周精选上新：本周精选欢迎采购！</view>
+        </view>
       </view>
     </view>
-  </view>
   </view>
 </view>

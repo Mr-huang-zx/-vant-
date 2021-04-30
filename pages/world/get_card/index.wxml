@@ -1,0 +1,19 @@
+<view class="outBox bgs" wx:if="{{false}}">
+  <!-- 活动文字 -->
+  <view class="activityWord bgs"></view>
+  <!-- 礼包内容 -->
+  <view class="giftMain">
+    <view class="{{index == selectedIdx?'bgs addBgis':'bgs normalBgi'}}" wx:for="{{giftList}}" wx:key="index" data-indexs="{{index}}" catchtap="selectedFun">
+      <image src="{{item.image}}"></image>
+      <text class="giftName">{{item.name}}</text>
+    </view>
+  </view>
+  <!-- 领取按钮 -->
+  <view class="sureGetGift bgs" catchtap="getGiftFun"></view>
+  <!-- 提醒 -->
+  <van-toast id="van-toast" />
+</view>
+<!-- 点击领取后展示的页面 -->
+<get_card_after>
+  
+</get_card_after>

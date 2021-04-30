@@ -1,17 +1,34 @@
-// pages/world/index.js
+// pages/world/get_card/index.js
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    giftList:[
+      {image:"/assets/image/world/lucky_bottle.png",name:"小花花"},
+      {image:"/assets/image/world/lucky_bottle.png",name:"特斯拉马丁"},
+      {image:"/assets/image/world/lucky_bottle.png",name:"迷你币"},
+      {image:"/assets/image/world/lucky_bottle.png",name:"没有东西"},
+    ],
+    selectedIdx:null
   },
-  // 跳转集卡页面
-  togetCard(){
-    wx.navigateTo({
-      url: './get_card/index',
+  // 选中
+  selectedFun(e){
+    console.log(e)
+    this.setData({
+      selectedIdx:e.currentTarget.dataset.indexs
     })
+  },
+  // 领取
+  getGiftFun(){
+    if(!this.data.selectedIdx){
+      app.globalFun.Toast({
+        "message":"请选择奖品",
+        "position":"bottom"
+      })
+    }
   },
   /**
    * 生命周期函数--监听页面加载

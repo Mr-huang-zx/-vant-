@@ -1,4 +1,4 @@
-// pages/world/index.js
+// component/new_user_pop/index.js
 Page({
 
   /**
@@ -7,12 +7,7 @@ Page({
   data: {
 
   },
-  // 跳转集卡页面
-  togetCard(){
-    wx.navigateTo({
-      url: './get_card/index',
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
